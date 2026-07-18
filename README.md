@@ -84,3 +84,21 @@ The model was evaluated using the MS COCO 2017 dataset.
   OpenCV
   Matplotlib
   pycocotools
+
+-How It Works
+     1. Input images are preprocessed and resized.
+     2. ResNet-50 extracts hierarchical visual features.
+     3. The Feature Pyramid Network generates multi-scale feature maps.
+     4. CBAM attention modules refine the feature maps using channel and spatial attention.
+     5. The classification head predicts object categories.
+     6. The regression head predicts bounding-box coordinates.
+     7. Anchors are decoded into final bounding boxes.
+     8. Non-Maximum Suppression removes redundant detections.
+     9. Final predictions are evaluated using object detection metrics.
+-Future Improvements
+     >Optimize the model for real-time inference.
+     >Reduce computational complexity.
+     >Improve detection under challenging weather and lighting conditions.
+     >Explore advanced attention mechanisms.
+     >Optimize the model for edge and embedded deployment.
+     >Integrate the model into autonomous driving systems.
